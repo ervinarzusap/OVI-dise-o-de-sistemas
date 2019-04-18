@@ -1,0 +1,144 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "franklin"; 
+}
+
+header{
+	width: auto;
+	height: 60px;
+	background: #005883;
+	display: flex;
+	justify-content: flex-end;
+}
+
+header h2{
+	color: #ffffff;
+	padding: 7px;
+	margin: 10px;
+}
+
+
+header a:hover{
+  color:#ffffff;
+  font-weight:bold;
+}
+
+header ul{
+	display: flex;
+	list-style: none;
+
+}
+header ul li a{
+	display: block;
+	padding: 20px 45px;
+	color: #fff;
+	text-decoration: none
+}
+
+header ul ul{
+	position: absolute;
+	top:150px;
+	display: block;
+	background: #2E9AFE;
+	transform: translateX(30%);
+	opacity: 0;
+	transition: all .6s
+}
+
+header .resaltado, header .actual a{
+  color:#1293d4;
+  font-weight:bold;
+}
+
+header ul li:hover ul{
+	opacity: 1;
+	transform: translateX(0%);
+}
+
+header ul li a span{
+	transition: all .6s
+}
+
+header ul li a:hover span{
+	transform: translateY(10px);
+	opacity: 0;
+}
+
+#apcont {
+	position: absolute;
+	width: 138px;
+	height: 43px;
+	z-index: 18;
+	left: 360px;
+	top: 159px;
+	color: #F2F2F2;
+}
+
+#cabecera h1{
+	margin-top: 100px;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.contenedor{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.contenedor1{
+	width: auto;
+	margin: auto;
+	overflow: hidden;
+}
+
+.contenedor2{
+	width: 70%;
+	margin: auto;
+	overflow: hidden;
+	color: #2E2E2E;
+	background-color: #E6E6E6;
+	border: 20px;
+}
+
+article#main-col{
+  float:left;
+  width:80%;
+  margin-top: 60px;
+}
+
+iframe{
+	width:100%;
+}
+
+#cajas{
+	margin-top: 60px;
+}
+
+#cajas .caja{
+	float: left;
+	text-align: left;
+	width: 25%;
+	padding: 50px;
+
+}
+
+#cajas .caja img{
+	width: 200px;
+	padding: 10px;
+}
+
+footer{
+	padding: 20px;
+	margin-top: 20px;
+	color: #fff;
+	background-color: #005883;
+	text-align: center; 
+}
+
+@font-face{
+	font-family: "franklin";
+	src: url(../fuentes/LibreFranklin-Regular.ttf);
+}
